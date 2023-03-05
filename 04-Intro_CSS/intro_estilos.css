@@ -14,3 +14,15 @@
 .color-rgba {
   color: rgba(71, 191, 143, 0.578);
 }
+
+/*Fondos*/
+.fondo {
+  /* background-color: cornflowerblue; */
+  background-image: url("https://asset.gecdesigns.com/img/backgrounds/modern-crystal-abstract-background-template-1612247149783-cover.webp");
+  background-position: center center;
+}
+
+.fondo-local {
+  background-image: url("/03-Multimedia/img/background.jpg");
+  background-position: left center;
+}
