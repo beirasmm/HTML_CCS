@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+.video {
+  position: fixed;
+  width: 200vw;
+  height: 200vh;
+  object-fit: cover;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-action {
+  padding: 2.5px;
+  border-radius: 1.5% 1.5%;
+}
