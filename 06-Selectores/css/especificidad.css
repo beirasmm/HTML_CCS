@@ -1,0 +1,23 @@
+#h1-id {
+  /*Mayor epecificidad son los id (1,0,0)*/
+  color: darksalmon;
+}
+
+.h1-class {
+  /*Segunda especificidad por clase (0,1,0)*/
+  color: yellow;
+}
+
+h1 {
+  /*Ultima especificidad el tipo de elemento (0,0,1)*/
+  color: blue;
+}
+
+
+p {
+  color: red;
+}
+
+/*Los estilos definidos en linea, nos dan un nivel superior de especificidad*/
+/*Etiqueta !important: es la especificidad mas alta, no obstante esto es lo que menos se debe utilizar
+EVITAR A TODA COSTA*/
