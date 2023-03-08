@@ -1,0 +1,94 @@
+.padre-1,
+.padre-2 {
+  width: 400px;
+  height: 400px;
+  background-color: #E4B1AB;
+}
+
+.hijo-1,
+.hijo-2 {
+  width: 50%;
+  height: 50%;
+  background-color: #dfbebe;
+  /* transition: transform 1s ease-in 2s; */
+  /*Transiciones*/
+}
+
+.padre-1:hover .hijo-1 {
+  animation: traslation_clockwise 2.5s infinite forwards alternate;
+  /* transform: translateX(100%);
+  background-color: blueviolet; */
+  /*El atributo alternate en animation, permite que la animación vaya en un sentido y luego al contrario de como se ha definido*/
+}
+
+.hijo-2 {
+  animation: traslation_counterclockwise 2.5s infinite forwards;
+}
+
+.padre-2:hover .hijo-2 {
+  /* animation: traslation_counterclockwise 2.5s infinite forwards; */
+  /*El atributo alternate en animation, permite que la animación vaya en un sentido y luego al contrario de como se ha definido*/
+  animation-play-state: paused;
+}
+
+/* Si quiero que la animación se mantenga siempre, sin necesidad del hover, la coloco en la clase hijo*/
+/*Si quiero que se dentenga al hacer hover*/
+@keyframes traslation_clockwise {
+  0% {
+    background-color: #CCB69B;
+    transform: translateX(0%) translateY(0%);
+  }
+
+  25% {
+    background-color: #DF9B6D;
+    transform: translateX(100%)
+  }
+
+  50% {
+    background-color: #AF1B3F;
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    background-color: #473144;
+    transform: translateX(0%) translateY(100%)
+  }
+
+  100% {
+    background-color: #CCB69B;
+    transform: translateX(0%) translateY(0%);
+  }
+
+  /*473144 El color que falta*/
+
+}
+
+@keyframes traslation_counterclockwise {
+  0% {
+    background-color: #CC444B;
+    transform: translateX(0%) translateY(0%);
+  }
+
+  25% {
+    background-color: #DA5552;
+    transform: translateY(100%) translateX(0%);
+  }
+
+  50% {
+    background-color: #DF7373;
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    background-color: #E39695;
+    transform: translateX(100%) translateY(0%)
+  }
+
+  100% {
+    background-color: #DA5552;
+    transform: translateX(0%) translateY(0%);
+  }
+
+  /*473144 El color que falta*/
+
+}
