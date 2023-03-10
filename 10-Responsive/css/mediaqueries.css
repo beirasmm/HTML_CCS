@@ -1,0 +1,24 @@
+h1 {
+  color: red;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* @media (max-width: 576px){ Aplica para todo: screen, print, etc
+  h1 {
+    color: blue;
+  }
+} */
+
+/* 
+print Impresora
+screen Pantalla */
