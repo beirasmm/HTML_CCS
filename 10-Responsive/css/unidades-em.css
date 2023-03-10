@@ -1,0 +1,23 @@
+.escenario {
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.escenario-1 {
+  font-size: 32px;
+}
+
+.escenario-2 {
+  font-size: 16px;
+}
+
+.em {
+  /*Tamaño de fuente del contenedor, se utilza cuando queremos hacer referencia al tamaño de fuente relativo al padre donde esta contenido*/
+  font-size: 2em;
+}
+
+.rem {
+  /*Tamaño de fuente de la raíz, es lo usualmente utilizado para diseño responsive */
+  font-size: 2rem;
+}
