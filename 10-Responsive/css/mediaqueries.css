@@ -13,6 +13,24 @@ p {
   }
 }
 
+@media (orientation: landscape) {
+  p {
+    color: yellowgreen
+  }
+}
+
+@media (orientation: landscape) and (min-height:400px) {
+  p {
+    color: red
+  }
+}
+
+@media (min-height: 300px) and (min-width:1160px) {
+  p {
+    color: darksalmon
+  }
+}
+
 /* @media (max-width: 576px){ Aplica para todo: screen, print, etc
   h1 {
     color: blue;

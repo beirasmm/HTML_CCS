@@ -1,0 +1,15 @@
+.contenedor {
+  background-color: yellow;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  height: 5rem;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.item {
+  background-color: salmon;
+  padding: 0.25rem;
+
+}

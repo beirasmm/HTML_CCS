@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100;300;500;700&display=swap');
+
+h2.login-title {
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 250;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+
+/* Login Section */
+.login-section {
+  background: url(../img/hg-background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  background-size: cover;
+  /* width: 65%; */
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 25px;
+  margin: 10rem 1rem;
+  padding: 5px;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+img.logo {
+  width: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password {
+  display: block;
+}
+
+.input-icons i {
+  width: 100%;
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 0.5rem;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.input-icons i.bi-eye#bi-eye-slash {
+  width: 100%;
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 0.5rem;
+  animation: click;
+
+}
+
+.password-ico {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-right: 1px;
+}
+
+.btn {
+  width: 10rem;
+}
+
+.separator {
+  display: flex;
+  width: 80%;
+}
+
+.separator hr {
+  flex-grow: 1;
+  gap: 15px;
+  border: none;
+  border-top: 1px solid #6c757d;
+}
+
+#btnsignup {
+  color: #fff;
+}
+
+.help-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.help-section a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Slideshow Section */
+/* overflow-x: scroll; */
+.slide {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+}
+
+.main-slideshow img.slider-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.main-slideshow {
+  /* background: blueviolet; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* overflow-x: hidden; */
+  background-size: cover;
+  /* width: 35%; */
+  /* height: 100%; */
+  margin: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .8
+  }
+
+  to {
+    opacity: 1
+  }
+}
